@@ -22,6 +22,8 @@ Dynamické klasifikace původu filmu (Czech nebo Foreign) nebo výpočtu průmě
 
 **Druhý skript je v souboru vyvoj_vznikajicich_zanru_imdb.sql**
 
+Použité koncepty:
+
 **Common Table Expressions (CTE)**
 Použití více CTE (WITH combined_genres, genre_counts, total_genres_per_year) pro rozdělení složitého dotazu na logické části.
 To usnadňuje čitelnost a opakované použití dílčích výsledků v hlavním dotazu.
@@ -43,3 +45,40 @@ ROUND((gc.genre_count * 100.0 / tg.total_genres), 2):
 Pokročilý výpočet procentuálního podílu jednotlivých žánrů v daném roce s zaokrouhlením na dvě desetinná místa.
 Kombinace matematických operací a zaokrouhlování ukazuje praktické použití odvozených metrik.
 
+**Třetí skript je v souboru vyvoj_vznikajicich_zanru_csfd.sql**
+
+Použité koncepty:
+
+**UNPIVOT**
+Co dělá:
+Transformuje sloupce (např. genres_0, genres_1, ..., genres_8) na řádky v rámci tabulky.
+Syntaxe: UNPIVOT ("genres" FOR "genre_col" IN (...)) převádí hodnoty ze zadaných sloupců do jediného sloupce genres.
+Výhoda:
+Zjednodušuje práci s daty v případě, kdy jsou hodnoty uloženy ve více sloupcích, ale potřebujete je analyzovat jako řádky.
+
+**Filtrování (WHERE podmínka)**
+Co dělá:
+Filtruje záznamy s neplatnými hodnotami (NULL nebo prázdné řetězce).
+Výhoda: Zajišťuje, že další analýza pracuje pouze s relevantními daty, což zlepšuje kvalitu výsledků.
+
+**Agregace s COUNT(DISTINCT)**
+Co dělá:
+COUNT(DISTINCT "movie_id") počítá unikátní filmy v každém roce a žánru.
+Výhoda: Agregace umožňuje získat přehled o počtu filmů v každém žánru bez duplicit.
+
+**Výpočet procentuálního zastoupení**
+Co dělá:
+ROUND((gc."genre_count" / yt."total_count") * 100, 2):
+Vypočítává podíl jednotlivých žánrů na celkovém počtu filmů v každém roce.
+Výsledek je zaokrouhlen na dvě desetinná místa.
+Výhoda: Tento výpočet poskytuje normalizované údaje, které usnadňují srovnání žánrů mezi lety.
+
+**Použití více CTE (Common Table Expressions)**
+Co dělá:
+Rozděluje dotaz na logické kroky:
+unpivoted_data: Převádí sloupce žánrů na řádky.
+filtered_data: Filtruje neplatné záznamy.
+genre_counts: Počítá počet unikátních filmů v každém roce a žánru.
+year_totals: Sčítá celkové počty žánrů za rok.
+final_data: Spojuje výsledky a vypočítává procenta.
+Výhoda: Modularita kódu zlepšuje jeho čitelnost, laditelnost a opakovanou použitelnost.
