@@ -1,3 +1,9 @@
+--Tento dotaz porovnává průměrná hodnocení filmů mezi dvěma databázemi (CSFD a IMDB) v průběhu dekád. Výsledkem je tabulka, která obsahuje:
+--Dekádu.
+--Průměrné hodnocení českých a zahraničních filmů na ČSFD.
+--Průměrné hodnocení filmů na IMDb.
+--Pomocí tohoto kódu lze analyzovat trendy hodnocení filmů v čase a porovnat, jak jsou filmy hodnoceny na různých platformách.
+
 --Tato část vytváří dočasnou tabulku zvanou UniqueMovies, která obsahuje unikátní informace o filmech.
 WITH UniqueMovies AS (
     SELECT 
