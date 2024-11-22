@@ -83,7 +83,7 @@ year_totals: Sčítá celkové počty žánrů za rok.
 final_data: Spojuje výsledky a vypočítává procenta.
 Výhoda: Modularita kódu zlepšuje jeho čitelnost, laditelnost a opakovanou použitelnost.
 
-**Čtvrtý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu.py**
+**Čtvrtý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_csfd.py**
 
 Použité koncepty:
 
@@ -101,6 +101,31 @@ Použití pd.read_csv s parametrem chunksize umožňuje načítat a zpracovávat
 
 **Spojování dat (pd.concat) a efektivní ukládání do CSV.**
 Funkce pd.concat kombinuje všechny zpracované části dat (chunky) do jednoho velkého DataFrame.
+
+**Pátý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_imdb.py**
+
+Použité koncepty:
+
+**Použití Counter pro počítání výskytů**
+Counter je speciální datová struktura, která umožňuje snadno počítat výskyty prvků v seznamu. Místo běžného slovníku (dict), kde bychom museli ručně kontrolovat a přičítat hodnoty, Counter to zvládne automaticky.
+
+**Seznamová komprehense**
+Seznamová komprehense umožňuje vytvořit nový seznam na základě podmínek a transformací v jednom řádku. Tato konstrukce iteruje přes všechna slova, převádí je na malá písmena a přidává do seznamu pouze ta slova, která odpovídají barvám.
+[word.lower() for word in words if word.lower() in color_adjectives]
+
+**Slovníková komprehense pro výpočet procent**
+Slovníková komprehense je podobná seznamové komprehensi, ale místo seznamu vrací slovník. Zde je navíc použit výpočet procent, zaokrouhlování na desetinné místo a iterace přes položky slovníku color_count.
+color_percentages = {color: round((count / total_color_words) * 100, 1) for color, count in color_count.items()}
+
+**Zpracování textových dat**
+if isinstance(title, str):
+    words = title.split()
+Zpracování textových dat zahrnuje kontroly typu dat (isinstance), práci s řetězci (split) a jejich převod na malá písmena (lower). Kód také musí rozpoznat a ošetřit případy, kdy je hodnota NaN nebo jiného nečekaného typu.
+
+
+
+
+
 
 
 
