@@ -3,7 +3,8 @@ Corn &amp; Coke. Tato analýza je absolventským projektem Digitální akademie
 
 **První skript je v souboru prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql**
 
-Použité koncepty: 
+Použité koncepty:
+
 **Common Table Expressions (CTEs)**
 Použití WITH pro vytváření dočasných tabulek (UniqueMovies, CSFD_ratings, IMDB_ratings) pro organizaci a zlepšení čitelnosti komplexního SQL dotazu.
 
