@@ -122,6 +122,27 @@ if isinstance(title, str):
     words = title.split()
 Zpracování textových dat zahrnuje kontroly typu dat (isinstance), práci s řetězci (split) a jejich převod na malá písmena (lower). Kód také musí rozpoznat a ošetřit případy, kdy je hodnota NaN nebo jiného nečekaného typu.
 
+**Šestý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_imdb.py**
+
+Použité koncepty:
+
+**Tokenizace a čištění textu**
+Rozděluje text názvů filmů na jednotlivá slova a odstraňuje speciální znaky a velká písmena.
+
+**Použití modulu re pro regulární výrazy**
+re.findall(r'\b\w+\b', title.lower())
+Vyhledává všechna slova v textu (řetězec rozpoznává jako posloupnosti alfanumerických znaků) a ignoruje speciální znaky.
+
+**Filtrování stop slov**
+meaningful_words = [word for word in tokens if word not in stop_words]
+Odstraňuje běžná a nevýznamná slova (např. "and", "the", "of") ze seznamu slov.
+
+**Filtrování dat podle více podmínek**
+genre_data = data[(data['Genre_1'] == genre) | (data['Genre_2'] == genre) | (data['Genre_3'] == genre)]
+Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
+
+
+
 
 
 
