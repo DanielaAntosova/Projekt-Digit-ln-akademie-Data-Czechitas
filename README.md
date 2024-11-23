@@ -23,10 +23,6 @@ Převod hodnot roku na dekády pomocí FLOOR(CAST(year / 10) * 10). Elegantní z
 **CASE výrazy pro kategorizaci**
 Dynamická kategorizace původu filmu (Czech nebo Foreign) a výpočet průměrného hodnocení podle zadaných podmínek.
 
-
-![Snímek obrazovky](./Screenshots/Snímek%20obrazovky%202024-11-21%20134211.png)
-
-
 ## 2. Vývoj vznikajících žánrů IMDb
 
 [SQL script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyvoj_vznikajicich_zanru_imdb.sql)
