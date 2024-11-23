@@ -153,6 +153,7 @@ Odstraňuje běžná a nevýznamná slova (např. "and", "the", "of") ze seznamu
 **Filtrování dat podle více podmínek**
 ```python 
 genre_data = data[(data['Genre_1'] == genre) | (data['Genre_2'] == genre) | (data['Genre_3'] == genre)]
+```
 
 Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
 
