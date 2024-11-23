@@ -2,7 +2,7 @@
 
 Corn &amp; Coke. Tato analýza je absolventským projektem Digitální akademie Data u Czechitas. 
 
-## Průměrné hodnocení filmů na ČSFD a IMDb za dekádu
+## 1. Průměrné hodnocení filmů na ČSFD a IMDb za dekádu
 
 *První skript je v souboru prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql*
 
