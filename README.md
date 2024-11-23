@@ -167,6 +167,7 @@ Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
 ## 7. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr ČSFd
 
 *Sedmý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py*
+[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py)
 
 Použité koncepty:
 
