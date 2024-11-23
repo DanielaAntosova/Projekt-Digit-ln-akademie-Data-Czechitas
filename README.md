@@ -175,20 +175,19 @@ Použité koncepty:
 
 
 **Zpracování přirozeného jazyka (NLP) pomocí lemmatizace**
-Lemmatizace je základní technika NLP, která se běžně používá v profesionální práci s textem. Umožmí rozdělit text na jednotlivá slova a převést je na jejich základní tvary (lemmatizace) pomocí nástroje Stanza. Pomáhá sjednotit různě skloňovaná nebo časovaná slova, což modelu usnadňuje analýzu. 
+NLP (zpracování přirozeného jazyka) umožňuje počítačům porozumět psanému i mluvenému textu. Lemmatizace je klíčovou technikou NLP, která převádí slova na jejich základní tvary (např. „běžím" → „běžet"). V tomto projektu byla použita knihovna Stanza, která texty tokenizuje (rozděluje na slova) a následně lemmatizuje. Tento krok sjednocuje různé tvary slov a zvyšuje kvalitu vstupních dat pro další analýzu.
 
 **Prezentace textu pomocí TF-IDF**
-TF-IDF je standardní metoda v textové analýze a předzpracování dat pro strojové učení. Umožní převést text na číselnou reprezentaci, která zohledňuje význam slov (TF-IDF váhy). Zohledňuje tedy nejen četnost slov, ale i jejich specifickou důležitost pro dané dokumenty, což zlepšuje přesnost modelu. Modely v machine learning pracují jen s čísly.
+TF-IDF (Term Frequency-Inverse Document Frequency) je standardní metoda pro převod textu na číselnou reprezentaci. Váží slova podle jejich četnosti v jednom dokumentu a jejich vzácnosti v celém souboru dokumentů. To pomáhá zvýraznit důležitá slova a potlačit běžná slova, která nemají velký význam pro analýzu. V našem případě byla použita omezená reprezentace na 1000 nejvýznamnějších slov, což optimalizuje výkon modelu.
 
 **Trénink klasifikačního modelu logistické regrese**
-Použila jsem logistickou regresi k naučení modelu, který přiřazuje popis filmu k jednomu z žánrů. Model je učen, aby rozpoznával žánr filmu podle jeho popisu. Díky modelu je možné automaticky zařazovat text (např. filmy) do kategorií (žánrů)
+Logistická regrese byla zvolena jako model pro přiřazování popisů filmů k předem definovaným žánrům. Texty převedené na číselnou reprezentaci pomocí TF-IDF sloužily jako vstupní data pro trénink modelu. Model se naučil rozpoznávat souvislost mezi klíčovými slovy a jednotlivými žánry, což umožňuje automatickou klasifikaci textových popisů.
 
 **Vyhodnocení a interpretaci modelu pomocí metrik klasifikace.**
-Zjišťuje, jestli model funguje dobře, pomocí metrik jako přesnost a úspěšnost. Tyto metriky ukážou, jak model rozpoznává žánry a kde se může zlepšit.
+Kvalitu modelu byla hodnocena pomocí metrik, jako jsou přesnost (accuracy), citlivost (recall), přesnost předpovědi (precision) a F1 skóre. Tyto metriky ukázaly, jak dobře model předpovídá žánry na základě popisů. Analýza výsledků identifikovala silné i slabé stránky modelu, což pomáhá v dalším zlepšení.
 
 **Machine Learning (strojové učení)**
-Strojové učení umožňuje automatizovat složité úkoly, například třídění textů, což je praktické a efektivní řešení pro velká data. Použila jsem ho k vytvoření modelu logistické regrese, který se naučil rozpoznávat žánry filmů na základě jejich popisů. Tento model jsem poté využila k předpovědi žánrů na nových datech a následně vyhodnotila jeho výkon pomocí metrik, jako je přesnost a úspěšnost. Dále jsem strojové učení využila k identifikaci nejdůležitějších slov (lemmat), která měla největší vliv na rozhodnutí modelu pro konkrétní žánry. Tyto kroky ukazují, jak lze strojové učení použít nejen k automatizaci klasifikace, ale i k interpretaci výsledků.
-
+Strojové učení v mém kódu výrazně zjednodušilo a zefektivnilo proces klasifikace filmů na základě jejich popisů. Pomocí modelu logistické regrese bylo možné automaticky přiřazovat filmy k jednotlivým žánrům, což šetří čas a eliminuje riziko chyb, které by mohly vzniknout při manuálním třídění. Model také umožnil identifikaci klíčových slov (lemmat), která nejvíce ovlivňují rozhodování modelu o žánru, což poskytuje důležitý vhled do charakteristik jednotlivých kategorií. Díky tomu lze lépe pochopit, jak model pracuje, a analyzovat, která slova jsou pro jednotlivé žánry nejvýznamnější. Navíc model dokáže předpovídat žánry na nových, dosud neznámých datech, což je zásadní pro aplikace, které potřebují zpracovávat dynamické texty. Strojové učení tak umožnilo nejen efektivní klasifikaci, ale i hlubší interpretaci dat a jejich lepší využití.
 
 
 
