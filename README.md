@@ -111,7 +111,9 @@ Použití pd.read_csv s parametrem chunksize umožňuje načítat a zpracovávat
 **Spojování dat (pd.concat) a efektivní ukládání do CSV.**
 Funkce pd.concat kombinuje všechny zpracované části dat (chunky) do jednoho velkého DataFrame.
 
-**Pátý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_imdb.py**
+## 5. Výskyt barev v názvu filmu nebo popisu IMDb
+
+*Pátý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_imdb.py*
 
 Použité koncepty:
 
@@ -131,7 +133,9 @@ if isinstance(title, str):
     words = title.split()
 Zpracování textových dat zahrnuje kontroly typu dat (isinstance), práci s řetězci (split) a jejich převod na malá písmena (lower). Kód také musí rozpoznat a ošetřit případy, kdy je hodnota NaN nebo jiného nečekaného typu.
 
-**Šestý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_imdb.py**
+## 6. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr IMDb
+
+*Šestý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_imdb.py*
 
 Použité koncepty:
 
@@ -150,7 +154,9 @@ Odstraňuje běžná a nevýznamná slova (např. "and", "the", "of") ze seznamu
 genre_data = data[(data['Genre_1'] == genre) | (data['Genre_2'] == genre) | (data['Genre_3'] == genre)]
 Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
 
-**Sedmý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py**
+## 7. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr ČSFd
+
+*Sedmý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py*
 
 Použité koncepty:
 
