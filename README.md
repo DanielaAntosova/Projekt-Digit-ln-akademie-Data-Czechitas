@@ -84,7 +84,7 @@ Výhoda: Modularita kódu zlepšuje jeho čitelnost, laditelnost a opakovanou po
 
 ## 4. Výskyt barev v názvu filmů nebo popisu ČSFD
 
-*Čtvrtý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_csfd.py*
+[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyskyt_barev_v_nazvu_filmu_nebo_popisu_csfd.py)
 
 Použité koncepty:
 
@@ -108,7 +108,7 @@ Načítání velkých datových souborů po částech (chunksize) pro úsporu pa
 
 ## 5. Výskyt barev v názvu filmů nebo popisu IMDb
 
-*Pátý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_imdb.py*
+[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyskyt_barev_v_nazvu_filmu_nebo_popisu_imdb.py)
 
 Použité koncepty:
 
@@ -136,7 +136,7 @@ Zpracování textových dat zahrnuje kontroly typu dat (isinstance), práci s ř
 
 ## 6. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr IMDb
 
-*Šestý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_imdb.py*
+[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_imdb.py)
 
 Použité koncepty:
 
@@ -166,7 +166,6 @@ Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
 
 ## 7. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr ČSFd
 
-*Sedmý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py*
 [Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py)
 
 Použité koncepty:
