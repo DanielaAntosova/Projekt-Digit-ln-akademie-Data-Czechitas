@@ -105,6 +105,7 @@ class_counts = exploded_data["genre"].value_counts()
 
 valid_classes = class_counts[class_counts >= 2].index
 # Vybírá pouze ty žánry, které se vyskytují alespoň dvakrát
+# Používá minimum 2 výskytů, protože jeden záznam by nestačil na naučení a otestování modelu
 
 filtered_data = exploded_data[exploded_data["genre"].isin(valid_classes)]
 # Filtruje řádky tabulky podle těchto žánrů
@@ -121,6 +122,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 vectorizer = TfidfVectorizer(max_features=1000, stop_words=czech_stopwords)
 # Nastaví převod textu na číselnou reprezentaci (max. 1000 slov, ignoruje stopwords)
+# Toto omezení vybírá 1000 nejdůležitějších slov (dle jejich četnosti v textu). Je to kompromis mezi výkonem modelu a výpočetní náročností.
 
 X_train_vec = vectorizer.fit_transform(X_train)
 # Naučí se z trénovacích dat a převede texty na čísla
