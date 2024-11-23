@@ -100,7 +100,9 @@ Použité koncepty:
 NLP pipeline Stanza zpracovává český text a rozpoznává jeho jazykové struktury, jako jsou věty, slova a základní tvary slov (lemmata).
 
 **Vnořené seznamové komprehense pro rychlou iteraci.**
+```python
 Konstrukce [word.lemma for sentence in doc.sentences for word in sentence.words] rychle extrahuje základní tvary slov z každé věty a každého slova v textu.
+```
 
 **Manipulace se slovníky pro počítání výskytů.**
 Kód efektivně počítá výskyty barev ve slovníku tím, že kontroluje přítomnost klíče a aktualizuje hodnoty nebo přidává nové klíče.
@@ -122,15 +124,21 @@ Counter je speciální datová struktura, která umožňuje snadno počítat vý
 
 **Seznamová komprehense**
 Seznamová komprehense umožňuje vytvořit nový seznam na základě podmínek a transformací v jednom řádku. Tato konstrukce iteruje přes všechna slova, převádí je na malá písmena a přidává do seznamu pouze ta slova, která odpovídají barvám.
+
+```python
 [word.lower() for word in words if word.lower() in color_adjectives]
+```
 
 **Slovníková komprehense pro výpočet procent**
 Slovníková komprehense je podobná seznamové komprehensi, ale místo seznamu vrací slovník. Zde je navíc použit výpočet procent, zaokrouhlování na desetinné místo a iterace přes položky slovníku color_count.
 color_percentages = {color: round((count / total_color_words) * 100, 1) for color, count in color_count.items()}
 
 **Zpracování textových dat**
+```python
 if isinstance(title, str):
     words = title.split()
+```
+
 Zpracování textových dat zahrnuje kontroly typu dat (isinstance), práci s řetězci (split) a jejich převod na malá písmena (lower). Kód také musí rozpoznat a ošetřit případy, kdy je hodnota NaN nebo jiného nečekaného typu.
 
 ## 6. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr IMDb
@@ -143,11 +151,17 @@ Použité koncepty:
 Rozděluje text názvů filmů na jednotlivá slova a odstraňuje speciální znaky a velká písmena.
 
 **Použití modulu re pro regulární výrazy**
+```python
 re.findall(r'\b\w+\b', title.lower())
+```
+
 Vyhledává všechna slova v textu (řetězec rozpoznává jako posloupnosti alfanumerických znaků) a ignoruje speciální znaky.
 
 **Filtrování stop slov**
+```python 
 meaningful_words = [word for word in tokens if word not in stop_words]
+```
+ 
 Odstraňuje běžná a nevýznamná slova (např. "and", "the", "of") ze seznamu slov.
 
 **Filtrování dat podle více podmínek**
