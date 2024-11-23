@@ -90,7 +90,7 @@ year_totals: Sčítá celkové počty žánrů za rok.
 final_data: Spojuje výsledky a vypočítává procenta.
 Výhoda: Modularita kódu zlepšuje jeho čitelnost, laditelnost a opakovanou použitelnost.
 
-## 4. Výskyt barev v názvu filmu nebo popisu ČSFD
+## 4. Výskyt barev v názvu filmů nebo popisu ČSFD
 
 *Čtvrtý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_csfd.py*
 
@@ -111,7 +111,7 @@ Použití pd.read_csv s parametrem chunksize umožňuje načítat a zpracovávat
 **Spojování dat (pd.concat) a efektivní ukládání do CSV.**
 Funkce pd.concat kombinuje všechny zpracované části dat (chunky) do jednoho velkého DataFrame.
 
-## 5. Výskyt barev v názvu filmu nebo popisu IMDb
+## 5. Výskyt barev v názvu filmů nebo popisu IMDb
 
 *Pátý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_imdb.py*
 
