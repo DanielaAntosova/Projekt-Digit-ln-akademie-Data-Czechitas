@@ -151,7 +151,9 @@ meaningful_words = [word for word in tokens if word not in stop_words]
 Odstraňuje běžná a nevýznamná slova (např. "and", "the", "of") ze seznamu slov.
 
 **Filtrování dat podle více podmínek**
-```python genre_data = data[(data['Genre_1'] == genre) | (data['Genre_2'] == genre) | (data['Genre_3'] == genre)]```
+```python 
+genre_data = data[(data['Genre_1'] == genre) | (data['Genre_2'] == genre) | (data['Genre_3'] == genre)]```
+
 Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
 
 ## 7. Nejčastější slova v názvech nebo popisech filmů pro konkrétní žánr ČSFd
