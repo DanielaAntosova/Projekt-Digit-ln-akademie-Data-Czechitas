@@ -1,4 +1,4 @@
-# Projekt digitální akademie Czechitas
+<h1>Projekt digitální akademie Czechitas<h1>
 Corn &amp; Coke. Tato analýza je absolventským projektem Digitální akademie Data u Czechitas. 
 
 **První skript je v souboru prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql**
