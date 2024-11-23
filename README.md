@@ -141,8 +141,25 @@ Odstraňuje běžná a nevýznamná slova (např. "and", "the", "of") ze seznamu
 genre_data = data[(data['Genre_1'] == genre) | (data['Genre_2'] == genre) | (data['Genre_3'] == genre)]
 Vybere jen ty filmy, které mají zadaný žánr v jednom ze tří sloupců.
 
+**Sedmý skript je v souboru nejcastejsi_slova_v_nazvech_nebo_popisech_filmu_pro_konkretni_zanr_csfd.py**
+
+Použité koncepty:
 
 
+**Zpracování přirozeného jazyka (NLP) pomocí lemmatizace**
+Lemmatizace je základní technika NLP, která se běžně používá v profesionální práci s textem. Umožmí rozdělit text na jednotlivá slova a převést je na jejich základní tvary (lemmatizace) pomocí nástroje Stanza. Pomáhá sjednotit různě skloňovaná nebo časovaná slova, což modelu usnadňuje analýzu. 
+
+**Prezentace textu pomocí TF-IDF**
+TF-IDF je standardní metoda v textové analýze a předzpracování dat pro strojové učení. Umožní převést text na číselnou reprezentaci, která zohledňuje význam slov (TF-IDF váhy). Zohledňuje tedy nejen četnost slov, ale i jejich specifickou důležitost pro dané dokumenty, což zlepšuje přesnost modelu. Modely v machine learning pracují jen s čísly.
+
+**Trénink klasifikačního modelu logistické regrese**
+Použila jsem logistickou regresi k naučení modelu, který přiřazuje popis filmu k jednomu z žánrů. Model je učen, aby rozpoznával žánr filmu podle jeho popisu. Díky modelu je možné automaticky zařazovat text (např. filmy) do kategorií (žánrů)
+
+**Vyhodnocení a interpretaci modelu pomocí metrik klasifikace.**
+Zjišťuje, jestli model funguje dobře, pomocí metrik jako přesnost a úspěšnost. Tyto metriky ukážou, jak model rozpoznává žánry a kde se může zlepšit.
+
+**Machine Learning (strojové učení)**
+Strojové učení umožňuje automatizovat složité úkoly, například třídění textů, což je praktické a efektivní řešení pro velká data. Použila jsem ho k vytvoření modelu logistické regrese, který se naučil rozpoznávat žánry filmů na základě jejich popisů. Tento model jsem poté využila k předpovědi žánrů na nových datech a následně vyhodnotila jeho výkon pomocí metrik, jako je přesnost a úspěšnost. Dále jsem strojové učení využila k identifikaci nejdůležitějších slov (lemmat), která měla největší vliv na rozhodnutí modelu pro konkrétní žánry. Tyto kroky ukazují, jak lze strojové učení použít nejen k automatizaci klasifikace, ale i k interpretaci výsledků.
 
 
 
