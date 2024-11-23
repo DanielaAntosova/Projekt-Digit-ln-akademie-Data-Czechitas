@@ -23,7 +23,7 @@ Transformace hodnot roku na dekády pomocí FLOOR(CAST(...) / 10) * 10, což je 
 **CASE výrazy pro kategorizaci**
 Dynamické klasifikace původu filmu (Czech nebo Foreign) nebo výpočtu průměrného hodnocení na základě specifických podmínek.
 
-## Vývoj vznikajících žánrů IMDb
+## 2. Vývoj vznikajících žánrů IMDb
 
 *Druhý skript je v souboru vyvoj_vznikajicich_zanru_imdb.sql*
 
@@ -50,7 +50,9 @@ ROUND((gc.genre_count * 100.0 / tg.total_genres), 2):
 Pokročilý výpočet procentuálního podílu jednotlivých žánrů v daném roce s zaokrouhlením na dvě desetinná místa.
 Kombinace matematických operací a zaokrouhlování ukazuje praktické použití odvozených metrik.
 
-**Třetí skript je v souboru vyvoj_vznikajicich_zanru_csfd.sql**
+## 3. Vývoj vznikajících žánrů ČSFD
+
+*Třetí skript je v souboru vyvoj_vznikajicich_zanru_csfd.sql*
 
 Použité koncepty:
 
@@ -88,7 +90,9 @@ year_totals: Sčítá celkové počty žánrů za rok.
 final_data: Spojuje výsledky a vypočítává procenta.
 Výhoda: Modularita kódu zlepšuje jeho čitelnost, laditelnost a opakovanou použitelnost.
 
-**Čtvrtý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_csfd.py**
+## 4. Výskyt barev v názvu filmu nebo popisu ČSFD
+
+*Čtvrtý skript je v souboru vyskyt_barev_v_nazvu_filmu_nebo_popisu_csfd.py*
 
 Použité koncepty:
 
