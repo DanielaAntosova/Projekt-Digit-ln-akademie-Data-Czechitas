@@ -4,7 +4,7 @@ Corn & Coke: Tento projekt je absolventskou analýzou v rámci Digitální akade
 
 ## 1. Průměrné hodnocení filmů na ČSFD a IMDb za dekádu
 
-[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql)
+[SQL script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql)
 
 Použité koncepty:
 
@@ -26,7 +26,7 @@ Dynamická kategorizace původu filmu (Czech nebo Foreign) a výpočet průměrn
 
 ## 2. Vývoj vznikajících žánrů IMDb
 
-[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyvoj_vznikajicich_zanru_imdb.sql)
+[SQL script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyvoj_vznikajicich_zanru_imdb.sql)
 
 Použité koncepty:
 
@@ -53,7 +53,7 @@ Kombinace matematických operací a zaokrouhlování ukazuje praktické použit�
 
 ## 3. Vývoj vznikajících žánrů ČSFD
 
-[Python script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyvoj_vznikajicich_zanru_csfd.sql)
+[SQL script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/vyvoj_vznikajicich_zanru_csfd.sql)
 
 Použité koncepty:
 
