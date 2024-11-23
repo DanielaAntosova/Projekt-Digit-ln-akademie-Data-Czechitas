@@ -4,7 +4,7 @@ Corn &amp; Coke. Tato analýza je absolventským projektem Digitální akademie
 
 ## Průměrné hodnocení filmů na ČSFD a IMDb za dekádu
 
-*První skript je v souboru prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql
+*První skript je v souboru prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql*
 
 Použité koncepty:
 
@@ -25,7 +25,7 @@ Dynamické klasifikace původu filmu (Czech nebo Foreign) nebo výpočtu průmě
 
 ## Vývoj vznikajících žánrů IMDb
 
-*Druhý skript je v souboru vyvoj_vznikajicich_zanru_imdb.sql
+*Druhý skript je v souboru vyvoj_vznikajicich_zanru_imdb.sql*
 
 Použité koncepty:
 
