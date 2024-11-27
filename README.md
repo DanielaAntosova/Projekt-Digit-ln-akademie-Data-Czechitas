@@ -182,7 +182,7 @@ Logistická regrese byla zvolena jako model pro přiřazování popisů filmů k
 **Vyhodnocení a interpretaci modelu pomocí metrik klasifikace.**
 Kvalitu modelu byla hodnocena pomocí metrik, jako jsou přesnost (accuracy), citlivost (recall), přesnost předpovědi (precision) a F1 skóre. Tyto metriky ukázaly, jak dobře model předpovídá žánry na základě popisů. Analýza výsledků identifikovala silné i slabé stránky modelu, což pomáhá v dalším zlepšení.
 
-![Vyhodnocení]([https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/Klasifikace_heatmap.png] "Heatmap klasifikace modelu")
+![Vyhodnocení](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/Klasifikace_heatmap.png "Heatmap klasifikace modelu")
 
 **Machine Learning (strojové učení)**
 Strojové učení v mém kódu výrazně zjednodušilo a zefektivnilo proces klasifikace filmů na základě jejich popisů. Pomocí modelu logistické regrese bylo možné automaticky přiřazovat filmy k jednotlivým žánrům, což šetří čas a eliminuje riziko chyb, které by mohly vzniknout při manuálním třídění. Model také umožnil identifikaci klíčových slov (lemmat), která nejvíce ovlivňují rozhodování modelu o žánru, což poskytuje důležitý vhled do charakteristik jednotlivých kategorií. Díky tomu lze lépe pochopit, jak model pracuje, a analyzovat, která slova jsou pro jednotlivé žánry nejvýznamnější. Navíc model dokáže předpovídat žánry na nových, dosud neznámých datech, což je zásadní pro aplikace, které potřebují zpracovávat dynamické texty. Strojové učení tak umožnilo nejen efektivní klasifikaci, ale i hlubší interpretaci dat a jejich lepší využití.
