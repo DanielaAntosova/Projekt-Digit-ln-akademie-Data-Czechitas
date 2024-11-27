@@ -177,7 +177,7 @@ NLP (zpracování přirozeného jazyka) umožňuje počítačům porozumět psan
 TF-IDF (Term Frequency-Inverse Document Frequency) je standardní metoda pro převod textu na číselnou reprezentaci. Váží slova podle jejich četnosti v jednom dokumentu a jejich vzácnosti v celém souboru dokumentů. To pomáhá zvýraznit důležitá slova a potlačit běžná slova, která nemají velký význam pro analýzu. V našem případě byla použita omezená reprezentace na 1000 nejvýznamnějších slov, což optimalizuje výkon modelu.
 
 **Trénink klasifikačního modelu logistické regrese**
-Logistická regrese byla zvolena jako model pro přiřazování popisů filmů k předem definovaným žánrům. Texty převedené na číselnou reprezentaci pomocí TF-IDF sloužily jako vstupní data pro trénink modelu. Model se naučil rozpoznávat souvislost mezi klíčovými slovy a jednotlivými žánry, což umožňuje automatickou klasifikaci textových popisů.
+Logistická regrese byla zvolena jako model pro přiřazování popisů filmů k předem definovaným žánrům. Texty převedené na číselnou reprezentaci pomocí TF-IDF sloužily jako vstupní data pro trénink modelu. Model se naučil rozpoznávat souvislost mezi klíčovými slovy a jednotlivými žánry, což umožňuje automatickou klasifikaci textových popisů. Logistická regrese je populární, protože je rychlá, snadno pochopitelná a často dostačuje.
 
 **Vyhodnocení a interpretaci modelu pomocí metrik klasifikace.**
 Kvalitu modelu byla hodnocena pomocí metrik, jako jsou přesnost (accuracy), citlivost (recall), přesnost předpovědi (precision) a F1 skóre. Tyto metriky ukázaly, jak dobře model předpovídá žánry na základě popisů. Analýza výsledků identifikovala silné i slabé stránky modelu, což pomáhá v dalším zlepšení.
