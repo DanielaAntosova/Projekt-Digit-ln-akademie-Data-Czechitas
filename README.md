@@ -2,6 +2,9 @@
 
 Corn & Coke: Tento projekt je absolventskou analýzou v rámci Digitální akademie Data u Czechitas.
 
+Závěry projektu a vizualizace jsou k dispozici na [blogu](https://medium.com/@d.antosova/corn-coke-aplikace-a-komparativn%C3%AD-anal%C3%BDza-%C4%8Dsfd-a-imdb-b0f0ba2b333f))
+ 
+
 ## 1. Průměrné hodnocení filmů na ČSFD a IMDb za dekádu
 
 [SQL script](https://github.com/DanielaAntosova/Projekt-Digitalni-akademie-Data-Czechitas/blob/main/prumerne_hodnoceni_filmu_na_csfd_a_imdb_za_dekadu.sql)
